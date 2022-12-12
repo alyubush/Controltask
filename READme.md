@@ -23,6 +23,28 @@ ___________
 алгоритм решения данной задачи в виде блок схемы выложен на GitHub по ссылке [блок-схема](https://github.com/alyubush/Controltask/blob/main/block-diagram.png).
 
 
+## Решение задачи в C#
+____________
+
+
+string [ ] array = new string [8] {"Hellooooo","2","world","123","test","One","two","three"};
+
+string [] array2=new string [array.Length];
+
+int count=0;
+
+for (int i = 0; i < array.Length; i++)
+
+{
+
+       int n =array[i].Length;
+        if (n<=3)
+    {
+        array2[count]=array[i];
+        Console.Write(array2[count]+", ");
+        count++;
+    }
+}
 
 
 
